@@ -14,8 +14,8 @@
       "format": "qcow2",
       "net_device": "virtio-net",
 
-      "iso_url": "http://centos.fastbull.org/centos/7/isos/x86_64/CentOS-7-x86_64-Minimal-1511.iso",
-      "iso_checksum": "88c0437f0a14c6e2c94426df9d43cd67",
+      "iso_url": "http://isoredirect.centos.org/centos/7/isos/x86_64/CentOS-7-x86_64-Minimal-1810.iso",
+      "iso_checksum": "bd43d41e01c2a46b3cb23eb9139dce4b",
       "iso_checksum_type": "md5",
 
       "vm_name": "centos7-base",
