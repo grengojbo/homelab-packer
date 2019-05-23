@@ -46,22 +46,14 @@
   "provisioners":
   [
     {
-      "type": "shell-local",
-      "command": "tar zcf stardata-install.tar.gz stardata-install/"
-    },
-    {
-      "type": "file",
-      "source": "stardata-install.tar.gz",
-      "destination": "/root/stardata-install.tar.gz"
-    },
-    {
       "type": "shell",
       "pause_before": "5s",
       "inline": [
-        "cd /root/",
-        "tar zxf stardata-install.tar.gz",
-        "cd stardata-install/",
-        "./install.sh",
+        "yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo",
+        "yum install docker-ce docker-ce-cli containerd.io && systemctl enable docker && systemctl start docker",
+        " curl -L https://packages.gitlab.com/install/repositories/runner/gitlab-runner/script.rpm.sh | bash",
+        "yum install -y gitlab-runner",
+        "usermod -aG docker gitlab-runner",
         "yum clean all"
       ]
     }
