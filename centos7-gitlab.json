@@ -20,7 +20,7 @@
       "iso_checksum_type": "sha256",
 
 
-      "vm_name": "centos7",
+      "vm_name": "centos7-gitlab",
       "output_directory": "centos7-gitlab-img",
 
       "http_directory": "centos",
