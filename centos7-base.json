@@ -31,7 +31,7 @@
       "ssh_host_port_max": 2229,
 
       "ssh_username": "root",
-      "ssh_password": "CHANGEME",
+      "ssh_password": "root",
       "ssh_port": 22,
       "ssh_wait_timeout": "1200s",
 
