@@ -1,4 +1,4 @@
-# Homelab Infra Packer
+# Homelab Packer
 
 Contains various Packer configurations for my home VM / Dev infrastructure.
 
