@@ -7,7 +7,8 @@
       "headless": false,
       "qemuargs": [
         [ "-m", "2048M" ],
-        [ "-smp", "cpus=1,maxcpus=16,cores=4" ]
+        [ "-smp", "cpus=1,maxcpus=16,cores=4" ],
+        ["-display", "gtk"]
       ],
       "disk_interface": "virtio",
       "disk_size": 100000,
