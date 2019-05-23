@@ -11,7 +11,7 @@
         ["-display", "gtk"]
       ],
       "disk_interface": "virtio",
-      "disk_size": 100000,
+      "disk_size": 95000,
       "format": "qcow2",
       "net_device": "virtio-net",
 
