@@ -4,11 +4,10 @@
     {
       "type": "qemu",
       "accelerator": "kvm",
-      "headless": false,
+      "headless": true,
       "qemuargs": [
         [ "-m", "2048M" ],
-        [ "-smp", "cpus=1,maxcpus=16,cores=4" ],
-        ["-display", "gtk"]
+        [ "-smp", "cpus=1,maxcpus=16,cores=4" ]
       ],
       "disk_interface": "virtio",
       "disk_size": 95000,
