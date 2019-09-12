@@ -20,7 +20,7 @@
       "iso_checksum_type": "sha256",
 
 
-      "vm_name": "centos7",
+      "vm_name": "centos7-base",
       "output_directory": "centos7-base-img",
 
       "http_directory": "centos",
