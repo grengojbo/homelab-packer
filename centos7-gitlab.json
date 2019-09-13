@@ -21,7 +21,7 @@
 
 
       "vm_name": "centos7-gitlab",
-      "output_directory": "centos7-gitlab-img",
+      "output_directory": "centos7-output",
 
       "http_directory": "centos",
       "http_port_min": 10082,
