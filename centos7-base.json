@@ -8,7 +8,7 @@
       "qemuargs": [
         [ "-m", "2048M" ],
         [ "-serial", "file:serial.out" ],
-        [ "-smp", "cpus=1,maxcpus=16,cores=4" ]
+        [ "-smp", "cpus=1,maxcpus=16,cores=2" ]
       ],
       "disk_interface": "virtio",
       "disk_size": 95000,
