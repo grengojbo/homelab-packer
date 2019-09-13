@@ -21,7 +21,7 @@
 
 
       "vm_name": "centos7-gitlab",
-      "output_directory": "centos-gitlab-output",
+      "output_directory": "centos7-gitlab-output",
 
       "http_directory": "centos",
       "http_port_min": 10082,
