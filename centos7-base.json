@@ -21,7 +21,7 @@
 
 
       "vm_name": "centos7-base",
-      "output_directory": "centos-output",
+      "output_directory": "centos7-base-output",
 
       "http_directory": "centos",
       "http_port_min": 10082,
