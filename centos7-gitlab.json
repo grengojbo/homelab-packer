@@ -4,7 +4,7 @@
     {
       "type": "qemu",
       "accelerator": "kvm",
-      "headless": false,
+      "headless": true,
       "qemuargs": [
         [ "-m", "2048M" ],
         [ "-serial", "file:serial.out" ],
