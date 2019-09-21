@@ -59,6 +59,7 @@
         "usermod -aG docker gitlab-runner",
         "usermod -aG wheel gitlab-runner",
         "yum clean all"
+        "sed -i '/swap/s/^/#/g' /etc/fstab"
       ]
     }
   ]
