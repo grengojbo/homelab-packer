@@ -50,10 +50,10 @@
       "type": "shell",
       "pause_before": "5s",
       "inline": [
-        "yum install -y yum-utils device-mapper-persistent-data lvm2 nmon",
+        "yum update -y && yum install epel-release -y && yum install -y yum-utils device-mapper-persistent-data lvm2 nmon",
         "yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo",
         "yum install -y docker-ce docker-ce-cli containerd.io && systemctl enable docker && systemctl start docker",
-        "yum clean all"
+        "yum clean all",
         "sed -i '/swap/s/^/#/g' /etc/fstab"
       ]
     }
