@@ -16,7 +16,7 @@
       "net_device": "virtio-net",
 
       "iso_url": "http://mirror.dal10.us.leaseweb.net/centos/8.0.1905/isos/x86_64/CentOS-8-x86_64-1905-dvd1.iso",
-      "iso_checksum": "9a2c47d97b9975452f7d582264e9fc16d108ed8252ac6816239a3b58cef5c53d",
+      "iso_checksum": "ea17ef71e0df3f6bf1d4bf1fc25bec1a76d1f211c115d39618fe688be34503e8",
       "iso_checksum_type": "sha256",
 
 
