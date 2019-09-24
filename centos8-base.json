@@ -15,13 +15,13 @@
       "format": "qcow2",
       "net_device": "virtio-net",
 
-      "iso_url": "https://mirror.dal10.us.leaseweb.net/centos/7.7.1908/isos/x86_64/CentOS-7-x86_64-Minimal-1908.iso",
+      "iso_url": "http://mirror.dal10.us.leaseweb.net/centos/8.0.1905/isos/x86_64/CentOS-8-x86_64-1905-dvd1.iso",
       "iso_checksum": "9a2c47d97b9975452f7d582264e9fc16d108ed8252ac6816239a3b58cef5c53d",
       "iso_checksum_type": "sha256",
 
 
-      "vm_name": "centos7-base",
-      "output_directory": "centos7-base-output",
+      "vm_name": "centos8-base",
+      "output_directory": "centos8-base-output",
 
       "http_directory": "centos",
       "http_port_min": 10082,
@@ -37,7 +37,7 @@
 
       "boot_wait": "40s",
       "boot_command": [
-        "<up><wait><tab><wait> text ks=http://{{ .HTTPIP }}:{{ .HTTPPort }}/c7-kvm-ks.cfg<enter><wait>"
+        "<up><wait><tab><wait> text ks=http://{{ .HTTPIP }}:{{ .HTTPPort }}/centos-kvm-ks.cfg<enter><wait>"
       ],
 
       "shutdown_command": "shutdown -P now"
