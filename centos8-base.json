@@ -35,7 +35,7 @@
       "ssh_port": 22,
       "ssh_wait_timeout": "3200s",
 
-      "boot_wait": "60s",
+      "boot_wait": "200s",
       "boot_command": [
         "<up><wait><tab><wait> text ks=http://{{ .HTTPIP }}:{{ .HTTPPort }}/centos-kvm-ks.cfg<enter><wait>"
       ],
