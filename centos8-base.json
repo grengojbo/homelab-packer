@@ -50,10 +50,10 @@
       "type": "shell",
       "pause_before": "10s",
       "inline": [
-        "yum update -y && yum install epel-release -y && yum install -y yum-utils device-mapper-persistent-data lvm2 nmon",
-        "yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo",
-        "yum install -y docker-ce docker-ce-cli containerd.io && systemctl enable docker && systemctl start docker",
-        "yum clean all",
+        "dnf update -y && dnf install epel-release -y && dnf install -y dnf-plugins-core device-mapper-persistent-data lvm2 nmon",
+        "dnf config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo",
+        "dnf install -y docker-ce docker-ce-cli containerd.io && systemctl enable docker && systemctl start docker",
+        "dnf clean all",
         "sed -i '/swap/s/^/#/g' /etc/fstab"
       ]
     }
