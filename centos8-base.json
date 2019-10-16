@@ -43,15 +43,4 @@
       "shutdown_command": "shutdown -P now"
     }
   ],
-
-  "provisioners":
-  [
-    {
-      "type": "shell",
-      "pause_before": "10s",
-      "inline": [
-        "dnf update -y",
-        "dnf update -y"
-    }
-  ]
 }
