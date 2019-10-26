@@ -58,7 +58,7 @@
         "dnf update -y && dnf install -y gitlab-runner",
         "usermod -aG docker gitlab-runner",
         "usermod -aG wheel gitlab-runner",
-        "dnf clean all"
+        "dnf clean all -y"
         "sed -i '/swap/s/^/#/g' /etc/fstab"
       ]
     }
