@@ -33,9 +33,9 @@
       "ssh_username": "root",
       "ssh_password": "root",
       "ssh_port": 22,
-      "ssh_wait_timeout": "3200s",
+      "ssh_wait_timeout": "20m",
 
-      "boot_wait": "200s",
+      "boot_wait": "10s",
       "boot_command": [
         "<up><wait><tab><wait> text ks=http://{{ .HTTPIP }}:{{ .HTTPPort }}/centos-kvm-ks.cfg<enter><wait>"
       ],
@@ -51,14 +51,14 @@
       "pause_before": "10s",
       "inline": [
         "echo '%wheel        ALL=(ALL)       NOPASSWD: ALL' >> /etc/sudoers",
-        "yum update -y && yum install epel-release -y && yum install -y yum-utils device-mapper-persistent-data lvm2 nmon",
-        "yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo",
-        "yum install -y docker-ce docker-ce-cli containerd.io && systemctl enable docker && systemctl start docker",
+        "dnf update -y && dnf install epel-release -y && dnf install yum-utils device-mapper-persistent-data lvm2 nmon -y",
+        "dnf config-manager--add-repo https://download.docker.com/linux/centos/docker-ce.repo",
+        "dnf install docker-ce docker-ce-cli containerd.io -y && systemctl enable docker && systemctl start docker",
         "curl -L https://packages.gitlab.com/install/repositories/runner/gitlab-runner/script.rpm.sh | bash",
-        "yum update -y && yum install -y gitlab-runner",
+        "dnf update -y && dnf install -y gitlab-runner",
         "usermod -aG docker gitlab-runner",
         "usermod -aG wheel gitlab-runner",
-        "yum clean all"
+        "dnf clean all"
         "sed -i '/swap/s/^/#/g' /etc/fstab"
       ]
     }
