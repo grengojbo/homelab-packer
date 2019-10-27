@@ -53,7 +53,7 @@
         "echo '%wheel        ALL=(ALL)       NOPASSWD: ALL' >> /etc/sudoers",
         "dnf update -y && dnf install epel-release -y && dnf update -y",
         "dnf config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo",
-        "dnf install docker-ce docker-ce-cli containerd.io --nobest -y && systemctl enable docker && systemctl start docker",
+        "dnf install docker-ce-3:19.03.4-3.el7 -y && systemctl enable docker && systemctl start docker",
         "curl -L https://packages.gitlab.com/install/repositories/runner/gitlab-runner/script.rpm.sh > /tmp/script.rpm.sh",
         "chmod +x /tmp/script.rpm.sh && os=el dist=7 /tmp/script.rpm.sh",
         "dnf update -y && dnf install -y gitlab-runner",
