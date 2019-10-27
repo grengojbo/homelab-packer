@@ -49,7 +49,8 @@
       "type": "shell",
       "pause_before": "10s",
       "inline": [
-        "dnf update -y && dnf install epel-release -y && dnf install dnf-plugins-core device-mapper-persistent-data -y",
+        "dnf update -y && dnf install epel-release -y && dnf update -y",
+        "dnf install dnf-plugins-core device-mapper-persistent-data lvm2 nmon -y",
         "dnf config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo",
         "dnf install docker-ce docker-ce-cli containerd.io -y && systemctl enable docker && systemctl start docker",
         "dnf clean all",
