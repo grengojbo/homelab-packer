@@ -52,7 +52,7 @@
       "inline": [
         "echo '%wheel        ALL=(ALL)       NOPASSWD: ALL' >> /etc/sudoers",
         "dnf update -y && dnf install epel-release -y && dnf update -y",
-        "dnf install yum-utils device-mapper-persistent-data lvm2 -y",
+        "dnf install yum-utils dnf-plugins-core device-mapper-persistent-data lvm2 -y",
         "dnf config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo",
         "dnf install docker-ce docker-ce-cli containerd.io -y && systemctl enable docker && systemctl start docker",
         "curl -L https://packages.gitlab.com/install/repositories/runner/gitlab-runner/script.rpm.sh | bash",
