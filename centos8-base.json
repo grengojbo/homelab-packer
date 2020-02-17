@@ -51,7 +51,7 @@
       "inline": [
         "dnf update -y && dnf install epel-release -y",
         "dnf config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo",
-        "dnf remove podman -y && dnf install docker-ce-3:19.03.5-3.el7 -y && systemctl enable docker && systemctl start docker",
+        "dnf remove podman -y && dnf install docker-ce –-nobest -y && systemctl enable docker && systemctl start docker",
         "groupadd docker",
         "dnf clean all",
         "sed -i '/swap/s/^/#/g' /etc/fstab"
