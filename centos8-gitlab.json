@@ -14,9 +14,9 @@
       "disk_size": 100000,
       "format": "qcow2",
       "net_device": "virtio-net",
-
-      "iso_url": "http://centos.mirror.lstn.net/8.1.1911/isos/x86_64/CentOS-8.1.1911-x86_64-boot.iso",
-      "iso_checksum": "7fea13202bf2f26989df4175aace8fdc16e1137f7961c33512cbfad844008948",
+      
+      "iso_url": "http://centos.mirror.lstn.net/8.1.1911/isos/x86_64/CentOS-8.1.1911-x86_64-dvd1.iso",
+      "iso_checksum": "3ee3f4ea1538e026fff763e2b284a6f20b259d91d1ad5688f5783a67d279423b",
       "iso_checksum_type": "sha256",
 
 
