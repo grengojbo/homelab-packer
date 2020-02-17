@@ -6,7 +6,7 @@ _Repo is based upon [stardata/packer-centos7-kvm-example](https://github.com/sta
 
 ## Configs
 
-* `centos8-base.json` - Base CentOS 7 image with a 95 GB primary hard disk.
+* `centos8-base.json` - Base CentOS 8 image with a 95 GB primary hard disk.
     * `docker-ce` pre-installed.
     * `git` pre-installed.
     * `epel` repository enabled.
