@@ -54,7 +54,7 @@
         "yum install -y --nobest docker-ce docker-ce-cli",
         "dnf install https://download.docker.com/linux/centos/7/x86_64/stable/Packages/containerd.io-1.2.6-3.3.el7.x86_64.rpm -y",
         "dnf update docker-ce docker-ce-cli -y && systemctl enable docker && systemctl start docker",
-        "groupadd docker",
+        "groupadd docker || true",
         "dnf clean all",
         "sed -i '/swap/s/^/#/g' /etc/fstab"
       ]
