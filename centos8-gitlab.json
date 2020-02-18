@@ -33,7 +33,7 @@
       "ssh_username": "root",
       "ssh_password": "root",
       "ssh_port": 22,
-      "ssh_wait_timeout": "20m",
+      "ssh_wait_timeout": "1200s",
 
       "boot_wait": "10s",
       "boot_command": [
